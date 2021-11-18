@@ -14,18 +14,19 @@ function execute (text=document.getElementById("exp").value) {
 }
 
 
-var myname=prompt("enter name ")
+ var Myname=prompt("enter name ")
 
-while ( !myname||!myname.match(/^[a-z]+$/i)) {
-  myname=prompt("enter name in letters only ")
+while ( !Myname||!Myname.match(/^[a-z]+$/i)) {
+  Myname=prompt("enter name in letters only ")
 }
 
-var age=prompt("enter Birth Data <2010 ")
-console.log(isNaN(age) +age)
+ var DoB=prompt("enter Birth Data <2010 ")
+console.log(isNaN(DoB) +DoB)
 
-while (  age > 2010 || isNaN(age) )
+while (  DoB > 2010 || isNaN(DoB) )
 {
-  age=prompt("enter numbers only and date of birth must befor  2010   ")
+  DoB=prompt("enter numbers only and date of birth must befor  2010   ")
 }
-hisAge=2021-parseInt(age)
-document.getElementById("data").innerText=`name is ${myname} date of birth is ${age} age is ${hisAge}`
+ var Age=2021-parseInt(DoB)
+// document.getElementById("data").innerText=`name is ${Myname} date of birth is ${DoB} age is ${Age}`;
+
